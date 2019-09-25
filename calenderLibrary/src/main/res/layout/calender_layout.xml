@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- days toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:id="@+id/ivBackMonth"
+            android:src="@drawable/icn_bkwd"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Month Year"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/tvMonth"
+
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:id="@+id/ivFrwdMonth"
+            android:src="@drawable/icn_frwd"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <!-- days header -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/legendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_corner_radius_round_light_grey_5_r"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/legendText1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sun"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/legendText2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mon"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/legendText3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tue"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/legendText4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Wed"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/legendText5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Thu"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/legendText6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fri"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/legendText7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Sat"
+
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- days view -->
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"/>
+
+
+</LinearLayout>
